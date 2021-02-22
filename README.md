@@ -2,7 +2,7 @@
 
 **Innehåll:**
   - [Dataanalys-projekt](https://github.com/abbindustrigymnasium/ai-dataanalys-abbwiljoh/tree/main/Data-Analys "Projekt från dataanalys-lektionerna.")
-  - Något mer???
+  - [AI Grunder](https://github.com/abbindustrigymnasium/ai-dataanalys-abbwiljoh/tree/main/AI%20grunder "Grunder för AI (Knearest Neighbor osv).")
 
 ---
 
