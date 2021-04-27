@@ -7,10 +7,10 @@ import os
 path = 'AI-projekt/FacialRecognitionProject/dataset'
 recognizer = cv2.face.LBPHFaceRecognizer_create()
 detector = cv2.CascadeClassifier(
-    "AI-projekt/FacialRecognitionProject/haarcascade_frontalface_default.xml")
+    "AI-projekt/Cascades/haarcascade_frontalface_default.xml")
+
+
 # function to get the images and label data
-
-
 def getImagesAndLabels(path):
     imagePaths = [os.path.join(path, f) for f in os.listdir(path)]
     faceSamples = []
@@ -33,5 +33,4 @@ recognizer.train(faces, np.array(ids))
 recognizer.write(
     'AI-projekt/FacialRecognitionProject/trainer/trainer.yml')
 # Print the numer of faces trained and end program
-print("\n [INFO] {0} faces trained. Exiting Program".format(
-    len(np.unique(ids))))
+print(f"\n [INFO] {len(np.unique(ids))} faces trained. Exiting Program")
