@@ -1,0 +1,7 @@
+Leenden:
+[{'faces': array([[502,  48, 340, 340]], dtype=int32), 'eyes': array([[ 79, 102,  68,  68]], dtype=int32), 'smile': array([[116, 239, 122,  61],
+       [ 89, 221, 182,  91]], dtype=int32)}, {'faces': array([[518,  55, 329, 329]], dtype=int32), 'eyes': array([[ 67,  94,  68,  68],
+       [190,  96,  68,  68]], dtype=int32), 'smile': array([[102, 231, 122,  61],
+       [ 77, 215, 182,  91]], dtype=int32)}, {'faces': array([[524,  57, 320, 320]], dtype=int32), 'eyes': array([[64, 94, 68, 68]], dtype=int32), 'smile': array([[100, 232, 122,  61],
+       [ 73, 210, 182,  91]], dtype=int32)}, {'faces': array([[518,  54, 328, 328]], dtype=int32), 'eyes': (), 'smile': array([[104, 234, 122,  61],
+       [ 79, 217, 182,  91]], dtype=int32)}, {'faces': array([[511,  48, 340, 340]], dtype=int32), 'eyes': array([[ 69, 104,  68,  68]], dtype=int32), 'smile': array([[ 86, 222, 182,  91]], dtype=int32)}]
