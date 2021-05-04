@@ -45,7 +45,7 @@ Följande behövs installeras innan start:
 * **FacialRecognitionProject**: Mapp för projekt för att känna igen och identifiera personer efter ansiktsdrag. Jag har inte använt denna, men har tagit hjälp av den för att inspireras och lära mig mer om OpenCV och ansiktsigenkänning.
 * ***TeddyAI***: Projektets mapp.
   * **db**: En "lokal databas" jag använt för att simulera ungefär hur jag skulle vilja att mitt program fungerade, om jag hade haft tid att fullända hela visionen, så att säga. 
-  * ***smileDetector.py***: Programmet som utvärderar ditt humör utifrån ditt leende/icke-leende. Den väljer sedan en lämplig bild från "databasen",**db**, och visar resulatet.
+  * ***[smileDetector.py](TeddyAI/smileDetector.py)***: Programmet som utvärderar ditt humör utifrån ditt leende/icke-leende. Den väljer sedan en lämplig bild från "databasen",**db**, och visar resulatet.
 
 # Programmet:
 Jag har kört programmet med Python 3.7.4 64 bit, med pip installerat utan större problem. Det kan stå något i stil med `Module 'cv2' has no 'example' member` men programmet fungerar ändå, det verkar vara pylint som spökar för oss.
