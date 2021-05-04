@@ -45,7 +45,7 @@ Följande behövs installeras innan start:
 * **FacialRecognitionProject**: Mapp för projekt för att känna igen och identifiera personer efter ansiktsdrag. Jag har inte använt denna, men har tagit hjälp av den för att inspireras och lära mig mer om OpenCV och ansiktsigenkänning.
 * ***TeddyAI***: Projektets mapp.
   * **db**: En "lokal databas" jag använt för att simulera ungefär hur jag skulle vilja att mitt program fungerade, om jag hade haft tid att fullända hela visionen, så att säga. 
-  * ***[smileDetector.py](TeddyAI/smileDetector.py)***: Programmet som utvärderar ditt humör utifrån ditt leende/icke-leende. Den väljer sedan en lämplig bild från "databasen",**db**, och visar resulatet.
+  * ***[smileDetector.py](TeddyAI/smileDetector.py)***: Programmet som utvärderar ditt humör utifrån ditt leende/icke-leende. Den väljer sedan en lämplig bild från "databasen", **db**, och visar resulatet.
 
 # Programmet:
 Jag har kört programmet med Python 3.7.4 64 bit, med pip installerat utan större problem. Det kan stå något i stil med `Module 'cv2' has no 'example' member` men programmet fungerar ändå, det verkar vara pylint som spökar för oss.
@@ -82,3 +82,5 @@ Jag tycker inte att projektet är klart, det finns mycket som kvarstår när det
 
 
 * Mer flexibel AI: När jag började projektet kunde jag bara hitta Haar Cascades för ansikte, leende och ögon, och jag baserade min "humörsalgoritm" utefter det. Om jag hade mer tid hade jag antagligen kunnat träna en Haar Cascade för att känna igen andra ansiktsuttryck, som gråt eller liknande, så att jag har fler faktorer än bara glad/ledsen.
+
+* Jag upptäckte också att ett leende med tänderna ger dubbla utslag, som kan ses på båda bilderna. I framtiden skulle man kunna använda detta för att identifiera skratt eller väldigt stor glädje.
