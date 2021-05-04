@@ -25,8 +25,7 @@ while True:
 
     for (x, y, w, h) in faces:
         cv2.rectangle(img, (x, y), (x+w, y+h), (255, 0, 0), 2)
-        cv2.rectangle(img, (x, round(y*0.5)),
-                      (x+w, y+h), (100, 50, 200), 2)
+        cv2.rectangle(img, (x, y), (x+w, round(y+h/2)), (255, 100, 150), 2)
         roi_gray = gray[y:y+h, x:x+w]
         roi_color = img[y:y+h, x:x+w]
 

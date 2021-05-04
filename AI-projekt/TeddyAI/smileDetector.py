@@ -1,11 +1,16 @@
 import numpy as np
 import cv2
+import os
+import random
 
 faceInfo = []
 happy = False
+limit = 40
+title = ''
+db_path = 'AI-projekt/TeddyAI/db/'
 
-# multiple cascades: https://github.com/Itseez/opencv/tree/master/data/haarcascades
-# more cascades: https://github.com/opencv/opencv/blob/master/data/haarcascades/
+# Hitta fler HAAR-cascades om du vill leka mer med detta: https://github.com/opencv/opencv/blob/master/data/haarcascades/
+
 faceCascade = cv2.CascadeClassifier(
     'AI-projekt/Cascades/haarcascade_frontalface_default.xml')
 smileCascade = cv2.CascadeClassifier(
@@ -52,11 +57,11 @@ while True:
         faceInfo.append(
             {"faces": faces, "eyes": eyes, "smile": smile})
 
-    k = cv2.waitKey(30) & 0xff
+    k = cv2.waitKey(30)
     if k == 27:  # press 'ESC' to quit
         break
 
-    elif n == 25:
+    elif n == limit:
         break
 
 cap.release()
@@ -70,8 +75,6 @@ for face in faceInfo:
     w = face['faces'][0][2]
     h = face['faces'][0][3]
     smileBool = False
-    # if face['eyes'] == ():
-    #     continue
 
     for smile in face['smile']:
         # x_s = smile[0]
@@ -79,11 +82,14 @@ for face in faceInfo:
         # w_s = smile[2]
         h_s = smile[3]
 
-        print(y, y_s, (y+h)/2)
-        if y <= y_s <= (y+h)/2:
-            for px in range(y, y + h_s):
-                if px not in range(face['eyes'][0][1], face['eyes'][0][3]):
-                    smileBool = True
+        if y <= y_s <= round(y+h/2):
+            for pos in range(y, y + h_s):
+                try:
+                    if pos not in range(face['eyes'][0][1], face['eyes'][0][3]):
+                        smileBool = True
+                except IndexError as e:
+                    if not face['eyes']:
+                        smileBool == True
 
     faceBools.append(smileBool)
 
@@ -91,10 +97,33 @@ for face in faceInfo:
 if faceBools.count(True) > faceBools.count(False):
     happy = True
 
+# RESULTAT
 if happy:
-    print('You are happy! :)')
+    print('\nYou are happy! :)')
 else:
-    print('You are not happy! :(')
+    print('\nYou are not happy! :(')
 
-print(faceInfo)
-print(happy)
+
+if happy:
+    certainty = round((faceBools.count(True) / len(faceBools))*100)
+else:
+    certainty = round((faceBools.count(False) / len(faceBools))*100)
+
+print(f'  - Predicted with {certainty}% certainty')
+
+# REKOMMENDATIONER: Lokal "databas" för exempel.
+if happy:
+    title = 'Happy :)'
+    db_path += 'happy/'
+else:
+    title = 'Not Happy :('
+    db_path += 'not_happy/'
+
+file = db_path + random.choice(os.listdir(db_path))
+img = cv2.imread(file)
+
+cv2.imshow(title, img)
+key = cv2.waitKey(0)
+
+if key == '27':
+    cv2.destroyAllWindows()
