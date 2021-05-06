@@ -67,7 +67,7 @@ while True:
         faceInfo.append(
             {"faces": faces, "eyes": eyes, "smile": smile})
 
-    k = cv2.waitKey(30)
+    k = cv2.waitKey(30) & 0xFF
     if k == 27:  # press 'ESC' to quit
         break
 
