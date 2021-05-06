@@ -29,6 +29,8 @@ För att det här projektet ska kunna bli någorlunda klart har jag valt att beg
 
 # Installationer
 Följande behövs installeras innan start:
+* För att installationerna ska fungera måste `pip` vara minst version `19.3`. Uppdatera med `pip install  --upgrade pip`!
+  
 * OpenCV-python `pip install opencv-python` och `pip install --user opencv-contrib-python` (se till att OpenCV inte redan är installerat).
   
 * Se till att pillow är installerat, om inte kan man använda `pip install pillow`.
@@ -48,7 +50,7 @@ Följande behövs installeras innan start:
   * ***[smileDetector.py](TeddyAI/smileDetector.py)***: Programmet som utvärderar ditt humör utifrån ditt leende/icke-leende. Den väljer sedan en lämplig bild från "databasen", **db**, och visar resulatet.
 
 # Programmet:
-Jag har kört programmet med Python 3.7.4 64 bit, med pip installerat utan större problem. Det kan stå något i stil med `Module 'cv2' has no 'example' member` men programmet fungerar ändå, det verkar vara pylint som spökar för oss.
+Jag har kört programmet med Python 3.7.4 64 bit, med pip installerat utan större problem, men din Python-version måste vara minst version `3.6`. Det kan stå något i stil med `Module 'cv2' has no 'example' member` men programmet fungerar ändå, det verkar vara pylint som spökar för oss.
 
 ## Behov
 De enda behov programmet har är Cascades-mappen och TeddyAI-mappen (med innehåll, förstås). Om du klonat detta repository så behöver du inte ändra något, annars kan du komma att behöva ändra filernas path. Alla pather i originalform börjar på `'AI-projekt/...'` så man behöver endast byta ut strängarna som börjar på det.
