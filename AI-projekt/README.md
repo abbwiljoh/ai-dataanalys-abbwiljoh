@@ -86,3 +86,7 @@ Jag tycker inte att projektet är klart, det finns mycket som kvarstår när det
 * Mer flexibel AI: När jag började projektet kunde jag bara hitta Haar Cascades för ansikte, leende och ögon, och jag baserade min "humörsalgoritm" utefter det. Om jag hade mer tid hade jag antagligen kunnat träna en Haar Cascade för att känna igen andra ansiktsuttryck, som gråt eller liknande, så att jag har fler faktorer än bara glad/ledsen.
 
 * Jag upptäckte också att ett leende med tänderna ger dubbla utslag, som kan ses på båda bilderna. I framtiden skulle man kunna använda detta för att identifiera skratt eller väldigt stor glädje.
+
+* Sist, men inte minst skulle jag vilja göra koden lite snyggare. Kanske skapa en klass för ansiktsigenkänning, eller ha en evighets-loop så man slipper stoppa/starta om programmet varje gång man vill utvärdera sitt humör. Detta tror jag bör vara ganska enkelt att implementera på en timme eller två, så om du kommer tillbaks till detta repo i framtiden kanske jag kommer ha uppdaterat koden!
+
+---
