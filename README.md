@@ -4,7 +4,7 @@
   - [Dataanalys-projekt](https://github.com/abbindustrigymnasium/ai-dataanalys-abbwiljoh/tree/main/Data-Analys "Projekt från dataanalys-lektionerna.")
   - [AI Grunder](https://github.com/abbindustrigymnasium/ai-dataanalys-abbwiljoh/tree/main/AI%20grunder "Grunder för AI (Knearest Neighbor osv).")
   - [AI-Projekt](AI-projekt/)
-    - [TeddyAI](AI-projekt/TeddyAI "Gå till TeddyAIs projektsida!")
+    - [TeddyAI (kod)](AI-projekt/TeddyAI "Gå till TeddyAIs projektsida!")
   - [AI Twitterbot](https://github.com/abbindustrigymnasium/ai-dataanalys-abbwiljoh/tree/main/AI/twitterbot "Inte dokumenterad!")
   - [Computer Vision](Computer-Vision/)
 
