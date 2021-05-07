@@ -3,7 +3,8 @@
 **Innehåll:**
   - [Dataanalys-projekt](https://github.com/abbindustrigymnasium/ai-dataanalys-abbwiljoh/tree/main/Data-Analys "Projekt från dataanalys-lektionerna.")
   - [AI Grunder](https://github.com/abbindustrigymnasium/ai-dataanalys-abbwiljoh/tree/main/AI%20grunder "Grunder för AI (Knearest Neighbor osv).")
-  - [AI-Projekt: TeddyAI](AI-projekt/)
+  - [AI-Projekt](AI-projekt/)
+    - [TeddyAI](AI-projekt/TeddyAI "Gå till TeddyAIs projektsida!")
   - [AI Twitterbot](https://github.com/abbindustrigymnasium/ai-dataanalys-abbwiljoh/tree/main/AI/twitterbot "Inte dokumenterad!")
   - [Computer Vision](Computer-Vision/)
 
@@ -16,7 +17,7 @@ Det är dataanalys.
 ## AI grunder
 AI-grunder.
 
-## AI-Projekt: TeddyAI
+## AI-Projekt: [TeddyAI](AI-projekt/TeddyAI "Gå till projektsidan")
 Mer info finns i projektets README!
 
 ## Twitterbot
