@@ -1,6 +1,7 @@
 ### TeddyAI- En AI som vet vad du behöver för att hålla humöret uppe!
 
 # Innehåll:
+  * [Video](#video)
   * [Projektbeskrivning](#Projektbeskrivning)
     * [Frågeställning](#Frågeställning)
     * [Begränsningar](#begränsningar)
@@ -15,6 +16,10 @@
     * [Problem och Egenheter](#problem-och-egenheter)
     * [Förbättringar](#förbättringar)
 ---
+
+# Video
+[![YouTube: TeddyAI - Informationsvideo](https://img.youtube.com/vi/nlV6djqeHBM/0.jpg)](https://youtu.be/nlV6djqeHBM "Watch video: TeddyAI - Informationsvideo")
+
 
 # Projektbeskrivning
 Projekt där AI används för ansiktsigenkänning och känsloidentifiering.
@@ -43,7 +48,7 @@ Följande behövs installeras innan start:
 
 # Filer och mappar
 * **Bilder**: Bilder för denna README.
-* **Cascades**: Innehåller Haar-Cascades; Färdigtränad data där en AI:n har tränats på negativa och postiva bilder av objekt. Haar-Cascades är en teknik som kan användas för ansiktsigenkänning. Eftersom det krävs mycket datorkraft och tid att skapa sin egen Haar-Cascade har jag hämtat färdigtränade modeller från [OpenCV:s egna GitHub-sida](https://github.com/opencv/opencv/blob/master/data/haarcascades/ "GitHub OpenCV Haarcascades").
+* **Cascades**: Innehåller [Haar-Cascades](https://docs.opencv.org/master/db/d28/tutorial_cascade_classifier.html "Länk från videon!"); Färdigtränad data där en AI:n har tränats på negativa och postiva bilder av objekt. Haar-Cascades är en teknik som kan användas för ansiktsigenkänning. Eftersom det krävs mycket datorkraft och tid att skapa sin egen Haar-Cascade har jag hämtat färdigtränade modeller från [OpenCV:s egna GitHub-sida](https://github.com/opencv/opencv/blob/master/data/haarcascades/ "GitHub OpenCV Haarcascades").
 * **FacialRecognitionProject**: Mapp för projekt för att känna igen och identifiera personer efter ansiktsdrag. Jag har inte använt denna, men har tagit hjälp av den för att inspireras och lära mig mer om OpenCV och ansiktsigenkänning.
 * ***TeddyAI***: Projektets mapp.
   * **db**: En "lokal databas" jag använt för att simulera ungefär hur jag skulle vilja att mitt program fungerade, om jag hade haft tid att fullända hela visionen, så att säga. 
